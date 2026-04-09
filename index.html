@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATG - Global Trade Simplified</title>
+    <!-- Importar fuente Montserrat de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <header class="navbar">
+        <div class="logo-container">
+            <a href="#">
+                <img src="logotipo/Logo.svg" alt="ATG Logo" class="logo-svg">
+            </a>
+        </div>
+        
+        <!-- NUEVO: Botón Menú Hamburguesa -->
+        <button class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        
+        <nav class="nav-menu">
+            <ul class="nav-links">
+                <!-- Enlaces con minúsculas para coincidir con los id de abajo -->
+                <li><a href="#home" class="active">Home</a></li>
+                <!-- Enlace hacia tu futura página de productos -->
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <main class="hero-section" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Global Trade <br><span class="text-teal">Simplified</span></h1>
+                <p>Atlantic Trading Group (ATG) is an international trading company based in Hong Kong, specializing in simplifying global purchasing and export processes, connecting clients to suppliers worldwide. We strategically operate between Asia, America, and Europe, offering complete solutions in negotiation, logistics, sourcing, and global supply chain management to ensure efficiency, security, and competitiveness.</p>
+                <a href="https://www.dropbox.com/scl/fo/usfvdaem60rq70wqm2c8m/AHS-7kXL-1Ok2AqHOoGjrYI?rlkey=5if3175f2fi79risenuqg2qz6&dl=0" target="_blank" class="btn-primary">Download catalog</a>
+            </div>
+            <div class="hero-image">
+                <img src="Imgens/hero/img_hero.webp" alt="3D Connected Globe">
+            </div>
+        </div>
+    </main>
+
+    <!-- Sección de Productos -->
+    <!-- Se eliminó el id="products" como solicitaste -->
+    <section class="products-section">
+        
+        <!-- Pestañas de Categorías -->
+        <div class="tabs-container">
+            <div class="tabs">
+                <button class="tab-btn active" data-target="tools">Tools</button>
+                <button class="tab-btn" data-target="home">Home & decoration</button>
+                <button class="tab-btn" data-target="electronics">Electronics</button>
+            </div>
+        </div>
+
+        <!-- Contenedor de las Cuadrículas (Grids) -->
+        <div class="products-wrapper">
+            <!-- CATEGORÍA 1: TOOLS -->
+            <div class="product-grid active" id="tools">
+                <!-- PRODUCTO 1 -->
+                <div class="product-card">
+                    <div class="product-img-container"><img src="Imgens/Products/Tools/ScrewdriverDrill Kit_1.webp" alt="Screwdriver/Drill Kit"></div>
+                    <h3>Screwdriver/Drill Kit</h3>
+                    <p>Perfect for those seeking high performance, mobility, and autonomy in assembly, carpentry, maintenance, or construction services.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+                <!-- PRODUCTO 2 -->
+                <div class="product-card">
+                    <div class="product-img-container"><img src="Imgens/Products/Tools/ScrewdriverDrill Kit_2.webp" alt="Screwdriver/Drill Kit"></div>
+                    <h3>Screwdriver/Drill Kit</h3>
+                    <p>Perfect for those seeking high performance, mobility, and autonomy in assembly, carpentry, maintenance, or construction services.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+                <!-- PRODUCTO 3 -->
+                <div class="product-card">
+                    <div class="product-img-container"><img src="Imgens/Products/Tools/ScrewdriverDrill Kit_3.webp" alt="Screwdriver/Drill Kit"></div>
+                    <h3>Screwdriver/Drill Kit</h3>
+                    <p>Perfect for those seeking high performance, mobility, and autonomy in assembly, carpentry, maintenance, or construction services.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+                <!-- PRODUCTO 4 -->
+                <div class="product-card">
+                    <div class="product-img-container"><img src="Imgens/Products/Tools/Floor Laying Machine.webp" alt="Floor Laying Machine"></div>
+                    <h3>Floor Laying Machine</h3>
+                    <p>The tile vibrates, ensuring ideal mortar distribution. This complete kit comes with a carrying case and two batteries so you can work without interruption.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+            </div>
+
+            <!-- CATEGORÍA 2: HOME & DECORATION -->
+             
+            <div class="product-grid" id="home-deco"> <!-- CAMBIO MENOR: cambie id a home-deco para evitar conflicto con el id="home" del hero -->
+                 <!-- PRODUCTO 1 -->
+                <div class="product-card">
+                    <div class="product-img-container"><img src="Imgens/Products/Decoration/Rack_1.webp"></div>
+                    <h3>Rack</h3><p>Keep your home organized with style and intelligence. This organizer rack is the ultimate solution for optimizing space.</p><a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a></div>
+                 <!-- PRODUCTO 2 -->
+                <div class="product-card"><div class="product-img-container"><img src="Imgens/Products/home/Home Gym Equipment.webp"></div>
+                <h3>Home Gym Equipment</h3><p>Strengthen and tone your abdominal muscles with this effective abdominal training belt.</p><a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a></div>
+                 <!-- PRODUCTO 3 -->
+                <div class="product-card"><div class="product-img-container"><img src="Imgens/Products/Decoration/Organizer Cart.webp"></div>
+                <h3>Organizer Cart</h3><p>The perfect solution for those looking to optimize space without sacrificing elegance.</p><a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a></div>
+                 <!-- PRODUCTO 4 -->
+                <div class="product-card"><div class="product-img-container"><img src="Imgens/Products/Decoration/Dish drainer.webp"></div>
+                <h3>Dish drainer</h3><p>Organization and sophistication for your kitchen; store your washed dishes with much more practicality. This 2-tier dish drainer uses a stable material called carbon steel with a black finish.</p><a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a></div>
+            </div>
+
+            <!-- CATEGORÍA 3: ELECTRONICS -->
+            <div class="product-grid" id="electronics">
+                <!-- PRODUCTO 1 -->
+                <div class="product-card"><div class="product-img-container"><img src="Imgens/Products/electronics/BARCODE READER.webp"></div>
+                <h3>Barcode Reader</h3><p>Desktop fixed barcode reader, ideal for speeding up checkout and point-of-sale service.</p><a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a></div>
+                <!-- PRODUCTO 2 -->
+                <div class="product-card"><div class="product-img-container"><img src="Imgens/Products/electronics/KETTLE.webp"></div>
+                <h3>Kettle</h3><p>: Classic design stainless steel electric kettle, durable and practical for everyday use.</p><a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a></div>
+                <!-- PRODUCTO 3 -->
+                <div class="product-card"><div class="product-img-container"><img src="Imgens/Products/electronics/KETTLE_2.webp"></div>
+                <h3>Kettle</h3><p>Clear glass electric kettle with stainless steel accents, offering a modern look for your kitchen.</p><a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a></div>
+                <!-- PRODUCTO 4 -->
+                <div class="product-card"><div class="product-img-container"><img src="Imgens/Products/electronics/KETTLE_3.webp"></div>
+                <h3>Kettle</h3><p>Stainless steel electric kettle with black base and accents, combining efficiency, durability, and elegance.</p><a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a></div>
+            </div>
+        </div>
+
+        <div class="see-all-container">
+            <!-- Asumo que este botón también debería ir a la página de productos -->
+            <a href="Products.html" class="btn-primary">See all products</a>
+        </div>
+    </section>
+    
+    <!-- =========================================
+         SECCIÓN DE SERVICIOS
+         ========================================= -->
+    <section class="services-section" id="services">
+        <div class="services-header">
+            <h2>Connecting markets. Delivering results.</h2>
+            <p class="text-teal">Our comprehensive services ensure seamless global trade operations.</p>
+        </div>
+
+        <div class="services-grid">
+            <!-- Tarjeta 1 -->
+            <div class="service-card">
+                <img src="Icon/Global Sourcing.svg" alt="Global Sourcing" class="service-icon">
+                <h3>Global Sourcing</h3>
+                <p>We connect you with reliable suppliers across Asia, America, and Europe, ensuring access to the best products and competitive pricing.</p>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="service-card">
+                <img src="Icon/Efficient Logistics.svg" alt="Logistics" class="service-icon">
+                <h3>Efficient Logistics</h3>
+                <p>Our logistics solutions optimize the movement of goods, reducing costs and ensuring timely delivery.</p>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="service-card">
+                <img src="Icon/Supply Chain.svg" alt="Supply Chain" class="service-icon">
+                <h3>Supply Chain Management</h3>
+                <p>We manage your entire supply chain, from sourcing to delivery, ensuring efficiency and minimizing risks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         SECCIÓN CTA (CALL TO ACTION)
+         ========================================= -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-text">
+                <h2>Your connection to the world’s most<br>promising markets starts here.</h2>
+                <p>Our global experts are ready to design the ideal import or export<br>solution for your company.</p>
+            </div>
+            <div class="cta-button-container">
+                <!-- Enviamos el CTA directo al formulario de contacto -->
+                <a href="#contact" class="btn-white">SPEAK WITH A SPECIALIST</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         SECCIÓN DE CONTACTO
+         ========================================= -->
+     <section class="contact-section" id="contact">
+        <div class="contact-container">
+            
+            <!-- Tarjeta de Información (Izquierda) -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Say something to start a live chat!</p>
+            </div>
+
+            <!-- Formulario (Derecha) -->
+            <div class="contact-form-container">
+                
+                <!-- Mensaje de éxito (Oculto inicialmente) -->
+                <div id="success-message" class="success-message" style="display: none;">
+                    <h3>Thank you for your interest in doing business with us, we will contact you as soon as possible.</h3>
+                </div>
+
+                <!-- Formulario -->
+                <form action="https://formsubmit.co/sowaagencia@gmail.com" method="POST" class="contact-form" id="contact-form">
+                    <input type="hidden" name="_cc" value="av09marketing@gmail.com">
+                    
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <!-- ==============================================
+                         CONFIGURACIÓN PARA IDENTIFICAR EL LEAD 
+                         ============================================== -->
+                    
+                    <input type="hidden" name="_subject" value="🔔 New Lead from ATG Website!">
+                    <input type="hidden" name="Internal Note" value="This is a new interested lead from the ATG website. Please reply as soon as possible.">
+                    
+                    <!-- ============================================== -->
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="First Name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="business">Business</label>
+                            <input type="text" id="business" name="Business" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="Email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">Phone Number (with country code)</label>
+                            <input type="tel" id="phone" name="Phone Number" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-submit" id="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =========================================
+         FOOTER
+         ========================================= -->
+    <footer class="footer">
+        <p> Address: Unit 1411, 14/Floor, Cosco Tower, 183 Queen's Road Central, Sheung Wan, Hong Kong.</p>
+        <p>&copy; 2026 ATLANTIC TRADING GROUP. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        // 1. FUNCIONALIDAD DEL MENÚ HAMBURGUESA
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        // Cerrar el menú al hacer clic en un enlace
+        document.querySelectorAll(".nav-links a").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+
+        // 2. FUNCIONALIDAD DE LAS PESTAÑAS DE PRODUCTOS
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const productGrids = document.querySelectorAll('.product-grid');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tabBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const targetId = btn.getAttribute('data-target');
+
+                productGrids.forEach(grid => {
+                    grid.classList.remove('active');
+                    // Corrección menor: Si el target es 'home' cambiamos el id a 'home-deco' para que funcione 
+                    // sin chocar con el ID del home de arriba
+                    if(grid.id === targetId || (targetId === 'home' && grid.id === 'home-deco')) {
+                        grid.classList.add('active');
+                    }
+                });
+            });
+        });
+
+        // 3. FUNCIONALIDAD DEL FORMULARIO (AJAX / SIN RECARGA)
+        const contactForm = document.getElementById('contact-form');
+        const successMessage = document.getElementById('success-message');
+        const submitBtn = document.getElementById('submit-btn');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                // Previene que la página se recargue
+                e.preventDefault();
+
+                // Cambiar el texto del botón y deshabilitarlo
+                const originalBtnText = submitBtn.innerText;
+                submitBtn.innerText = 'Sending...';
+                submitBtn.disabled = true;
+
+                // Recoger los datos del formulario
+                const formData = new FormData(contactForm);
+
+                // Enviar usando fetch
+                fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(response => {
+                    if (response.ok) {
+                        contactForm.style.display = 'none';
+                        successMessage.style.display = 'block';
+                    } else {
+                        throw new Error('Respuesta del servidor no fue OK');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('There was a problem sending your message. Please try again later.');
+                    
+                    submitBtn.innerText = originalBtnText;
+                    submitBtn.disabled = false;
+                });
+            });
+        }
+    </script>
+</body>
+</html>

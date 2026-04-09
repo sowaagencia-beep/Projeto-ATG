@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATG - Global Trade Simplified</title>
+    <!-- Importar fuente Montserrat de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <header class="navbar">
+        <div class="logo-container">
+            <a href="#">
+                <img src="logotipo/Logo.svg" alt="ATG Logo" class="logo-svg">
+            </a>
+        </div>
+        
+        <!-- NUEVO: Botón Menú Hamburguesa -->
+        <button class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        
+        <nav class="nav-menu">
+            <ul class="nav-links">
+                <!-- Enlaces con minúsculas para coincidir con los id de abajo -->
+                <li><a href="index.html" >Home</a></li>
+                <!-- Enlace hacia tu futura página de productos -->
+                <li><a href="products.html"class="active">Products</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECCIÓN MARKETPLACE -->
+    <main class="marketplace-section">
+        <div class="marketplace-container">
+            
+            <!-- Encabezado -->
+            <div class="marketplace-header">
+                <h1 class="marketplace-header-title">Marketplace</h1>
+                <p class="marketplace-header-description">We strategically operate between Asia, America, and Europe, offering complete solutions in negotiation, logistics, sourcing, and global supply chain management to ensure efficiency, security, and competitiveness.</p>
+            </div>
+     <!-- Filtros -->
+            <div class="filters-wrapper">
+                <span class="filter-label">FILTERS:</span>
+                <div class="filter-buttons">
+                    <button class="filter-pill active" data-filter="all">All</button>
+                    <button class="filter-pill" data-filter="tools">Tools</button>
+                    <button class="filter-pill" data-filter="home">Home</button>
+                    <button class="filter-pill" data-filter="decoration">Decoration</button>
+                    <button class="filter-pill" data-filter="electronics">Electronics</button>
+                </div>
+            </div>
+      
+    <!-- CUADRÍCULA DE PRODUCTOS (4 Columnas) -->
+            <!-- IMPORTANTE: Añade el atributo data-category a cada tarjeta -->
+            <div class="marketplace-grid" id="product-list">
+                
+                <!-- PRODUCTO 1 (Tools) -->
+                <div class="product-card" data-category="tools">
+                    <div class="product-img-container"><img src="Imgens/Products/Tools/ScrewdriverDrill Kit_1.webp" alt="Tool"></div>
+                    <h3>Screwdriver/Drill Kit</h3>
+                    <p>Perfect for those seeking high performance, mobility, and autonomy in assembly or construction.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 2 (Tools) -->
+                <div class="product-card" data-category="tools">
+                    <div class="product-img-container"><img src="Imgens/Products/Tools/Floor Laying Machine.webp" alt="Tool"></div>
+                    <h3>Floor Laying Machine</h3>
+                    <p>The tile vibrates, ensuring ideal mortar distribution. Complete kit comes with a carrying case.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+                <!-- PRODUCTO 3 (Tools) -->
+                <div class="product-card" data-category="tools">
+                    <div class="product-img-container"><img src="Imgens/Products/Tools/ScrewdriverDrill Kit_2.webp" alt="Tool"></div>
+                    <h3>Screwdriver/Drill Kit</h3>
+                    <p>The tile vibrates, ensuring ideal mortar distribution. Complete kit comes with a carrying case.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+                <!-- PRODUCTO 4 (Tools) -->
+                <div class="product-card" data-category="tools">
+                    <div class="product-img-container"><img src="Imgens/Products/Tools/ScrewdriverDrill Kit_3.webp" alt="Tool"></div>
+                    <h3>Screwdriver/Drill Kit</h3>
+                    <p>The tile vibrates, ensuring ideal mortar distribution. Complete kit comes with a carrying case.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+                <!-- PRODUCTO 5 (Tools) -->
+                <div class="product-card" data-category="tools">
+                    <div class="product-img-container"><img src="Imgens/Products/Tools/Kit of drill bits and Tips.webp" alt="Tool"></div>
+                    <h3>Kit of drill bits and Tips</h3>
+                    <p>Complete set for drilling and screwdriving, ideal for home and professional use.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+                <!-- PRODUCTO 6 (Tools) -->
+                <div class="product-card" data-category="tools">
+                    <div class="product-img-container"><img src="Imgens/Products/Tools/PROFESSIONAL STYLET KIT.webp" alt="Tool"></div>
+                    <h3>Professional Stylet Kit</h3>
+                    <p>Set of sturdy and precise utility knives, ideal for cutting paper, cardboard, plastic, leather, and other materials. They feature a sharp, retractable blade and an ergonomic body with a non-slip grip.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+                <!-- PRODUCTO 7 (Tools) -->
+                <div class="product-card" data-category="tools">
+                    <div class="product-img-container"><img src="Imgens/Products/Tools/Blade Kit for Utility Knife.webp" alt="Tool"></div>
+                    <h3>Blade kit for Utility Knife</h3>
+                    <p>Set of high-quality, sharp, and durable blades, ideal for replacement in utility knives.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 1 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/Home Gym Equipment.webp" alt="Home"></div>
+                    <h3>Home Gym Equipment</h3>
+                    <p>Strengthen and tone your abdominal muscles with this effective training belt.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+                <!-- PRODUCTO 2 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/CUPCAKE MOLD.webp" alt="Home"></div>
+                    <h3>Cupcake Mold</h3>
+                    <p>A standard 12-cup dark metal baking tin used for making muffins or cupcakes in the oven.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 3 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/FILTER TAP.webp" alt="Home"></div>
+                    <h3>Filter Tap</h3>
+                    <p>A kitchen sink faucet with a built-in water purification system.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 4 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/FILTER TAP_2.webp" alt="Home"></div>
+                    <h3>Filter Tap</h3>
+                    <p>A kitchen sink faucet with a built-in water purification system.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 5 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/FILTER TAP_3.webp" alt="Home"></div>
+                    <h3>Filter Tap</h3>
+                    <p>A kitchen sink faucet with a built-in water purification system.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 6 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/FILTER TAP_4.webp" alt="Home"></div>
+                    <h3>Filter Tap</h3>
+                    <p>A kitchen sink faucet with a built-in water purification system.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 7 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/FRYING PAN FOR TOAST.webp" alt="Home"></div>
+                    <h3>Frying Pan For Toast</h3>
+                    <p>A black, double-sided stovetop sandwich maker with a locking handle, designed to press and toast sandwiches over a burner.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 8 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/FRYING PAN_2.webp" alt="Home"></div>
+                    <h3>Frying Pan</h3>
+                    <p>A square, non-stick grill pan with raised ridges on the bottom, ideal for searing meats or vegetables and getting grill marks on the stovetop.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 9 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/FRYING PAN.webp" alt="Home"></div>
+                    <h3>Frying Pan</h3>
+                    <p>A square, non-stick grill pan with raised ridges on the bottom, ideal for searing meats or vegetables and getting grill marks on the stovetop.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 10 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/GOURMET FAUCET.webp" alt="Home"></div>
+                    <h3>Gourmet Faucet</h3>
+                    <p>Upgrade your kitchen with this elegant and highly functional Gourmet Faucet.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 11 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/GOURMET FAUCET_2.webp" alt="Home"></div>
+                    <h3>Gourmet Faucet</h3>
+                    <p>Upgrade your kitchen with this elegant and highly functional Gourmet Faucet.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+                <!-- PRODUCTO 12 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/GOURMET FAUCET_3.webp" alt="Home"></div>
+                    <h3>Gourmet Faucet</h3>
+                    <p>Upgrade your kitchen with this elegant and highly functional Gourmet Faucet.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 13 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/GOURMET FAUCET_4.webp" alt="Home"></div>
+                    <h3>Gourmet Faucet</h3>
+                    <p>Upgrade your kitchen with this elegant and highly functional Gourmet Faucet.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 14 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/GOURMET FAUCET_5.webp" alt="Home"></div>
+                    <h3>Gourmet Faucet</h3>
+                    <p>Upgrade your kitchen with this elegant and highly functional Gourmet Faucet.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 15 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/GOURMET FAUCET_6.webp" alt="Home"></div>
+                    <h3>Gourmet Faucet</h3>
+                    <p>Upgrade your kitchen with this elegant and highly functional Gourmet Faucet.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 16 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/GOURMET FAUCET_7.webp" alt="Home"></div>
+                    <h3>Gourmet Faucet</h3>
+                    <p>Upgrade your kitchen with this elegant and highly functional Gourmet Faucet.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 17 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/GOURMET FAUCET_8.webp" alt="Home"></div>
+                    <h3>Gourmet Faucet</h3>
+                    <p>Upgrade your kitchen with this elegant and highly functional Gourmet Faucet.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 18 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/GOURMET FAUCET_9.webp" alt="Home"></div>
+                    <h3>Gourmet Faucet</h3>
+                    <p>Upgrade your kitchen with this elegant and highly functional Gourmet Faucet.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 19 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/GOURMET FAUCET_10.webp" alt="Home"></div>
+                    <h3>Gourmet Faucet</h3>
+                    <p>Upgrade your kitchen with this elegant and highly functional Gourmet Faucet.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 20 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/GOURMET FAUCET_11.webp" alt="Home"></div>
+                    <h3>Gourmet Faucet</h3>
+                    <p>Upgrade your kitchen with this elegant and highly functional Gourmet Faucet.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 21 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/GOURMET FAUCET_12.webp" alt="Home"></div>
+                    <h3>Gourmet Faucet</h3>
+                    <p>Upgrade your kitchen with this elegant and highly functional Gourmet Faucet.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 22 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/GOURMET FAUCET_13.webp" alt="Home"></div>
+                    <h3>Gourmet Faucet</h3>
+                    <p>Upgrade your kitchen with this elegant and highly functional Gourmet Faucet.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+                <!-- PRODUCTO 23 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/GOURMET FAUCET_14.webp" alt="Home"></div>
+                    <h3>Gourmet Faucet</h3>
+                    <p>Upgrade your kitchen with this elegant and highly functional Gourmet Faucet.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 24 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/GOURMET FAUCET_15.webp" alt="Home"></div>
+                    <h3>Gourmet Faucet</h3>
+                    <p>Upgrade your kitchen with this elegant and highly functional Gourmet Faucet.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 25 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/INFLATABLE CHILD SEAT.webp" alt="Home"></div>
+                    <h3>Inflatable Child Seat</h3>
+                    <p>A white, inflatable baby support chair decorated with a small, subtle pattern.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 26 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/Large Graphite Casserole.webp" alt="Home"></div>
+                    <h3>Large Graphite Casserole</h3>
+                    <p>A deep, beige-colored cooking pot with a glass lid.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 27 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/LARGE GRAY POT.webp" alt="Home"></div>
+                    <h3>Large Gray Pot</h3>
+                    <p>A wide, speckled gray pot with two side handles and a glass lid.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 28 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/Light gray kettle_Large pot.webp" alt="Home"></div>
+                    <h3>Large Pot</h3>
+                    <p>A tall, speckled white saucepan/milk pot with a single handle.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 29 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/Makeup Brush Set.webp" alt="Home"></div>
+                    <h3>Makeup Brush Set</h3>
+                    <p>Travel-friendly makeup brush kits. Each comes in a hard-shell case featuring a built-in mirror and multiple matching brushes.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 30 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/Makeup Brush Set_2.webp" alt="Home"></div>
+                    <h3>Makeup Brush Set</h3>
+                    <p>Travel-friendly makeup brush kits. Each comes in a hard-shell case featuring a built-in mirror and multiple matching brushes.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 31 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/MATTE BLACK KETTLE.webp" alt="Home"></div>
+                    <h3>Matte Black Kettle</h3>
+                    <p>A sleek gooseneck stovetop kettle in matte black with a wooden handle, perfect for precise pouring when making pour-over coffee or tea.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 32 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/RECTANGULAR BAKING PAN.webp" alt="Home"></div>
+                    <h3>Rectangular Baking Pan</h3>
+                    <p>A set of three nested, dark metal rectangular baking or roasting pans in varying sizes.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 33 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/ROUND BAKING PAN.webp" alt="Home"></div>
+                    <h3>Round Baking Pan</h3>
+                    <p>A flat, circular non-stick tray designed for baking pizzas, cookies, or pastries. It features a shallow rim for easy sliding and even heat distribution.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 34 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/SMALL FRYING PAN.webp" alt="Home"></div>
+                    <h3>Small Frying Pan</h3>
+                    <p>A compact skillet with a cream-colored speckled interior and a wood-textured ergonomic handle. Ideal for frying eggs or sautéing small portions.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 35 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/Small Pan.webp" alt="Home"></div>
+                    <h3>Small Pan</h3>
+                    <p>A deep saucepan featuring a matching speckled finish and a glass lid with a wooden knob. Perfect for boiling liquids, making sauces, or heating soups.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                 <!-- PRODUCTO 36 (Home) -->
+                <div class="product-card" data-category="home">
+                    <div class="product-img-container"><img src="Imgens/Products/home/Stainless steel kettle.webp" alt="Home"></div>
+                    <h3>Stainless steel kettle</h3>
+                    <p>A classic stovetop tea kettle made of polished stainless steel. It includes a heat-resistant black handle and a built-in whistle to signal when the water has reached a boil.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                
+
+                <!-- PRODUCTO 1 (Decoration) -->
+                <div class="product-card" data-category="decoration">
+                    <div class="product-img-container"><img src="Imgens/Products/Decoration/Organizer Cart.webp" alt="Deco"></div>
+                    <h3>Organizer Cart</h3>
+                    <p>A mobile three-tier utility cart in black. It features mesh-bottom baskets and wheels, making it a versatile storage solution for kitchens, bathrooms, or offices.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 2 (Decoration) -->
+                <div class="product-card" data-category="decoration">
+                    <div class="product-img-container"><img src="Imgens/Products/Decoration/Rack_1.webp" alt="Deco"></div>
+                    <h3>Rack Organizer</h3>
+                    <p>Modular plastic storage cabinets with clear magnetic doors.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 3 (Decoration) -->
+                <div class="product-card" data-category="decoration">
+                    <div class="product-img-container"><img src="Imgens/Products/Decoration/Rack_2.webp" alt="Deco"></div>
+                    <h3>Rack Organizer</h3>
+                    <p>Modular plastic storage cabinets with clear magnetic doors.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 4 (Decoration) -->
+                <div class="product-card" data-category="decoration">
+                    <div class="product-img-container"><img src="Imgens/Products/Decoration/Rack_3.webp" alt="Deco"></div>
+                    <h3>Rack Organizer</h3>
+                    <p>Modular plastic storage cabinets with clear magnetic doors.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 5 (Decoration) -->
+                <div class="product-card" data-category="decoration">
+                    <div class="product-img-container"><img src="Imgens/Products/Decoration/ADJUSTABLE MAGIC ROD.webp" alt="Deco"></div>
+                    <h3>Adjustable Magic Rod</h3>
+                    <p>A telescopic tension rod made of stainless steel. It can be extended to fit between walls without drilling, ideal for hanging shower curtains or clothes.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 6 (Decoration) -->
+                <div class="product-card" data-category="decoration">
+                    <div class="product-img-container"><img src="Imgens/Products/Decoration/CLOSET CLOTHES RACK DOUBLE MAX.webp" alt="Deco"></div>
+                    <h3>Closet Clothes Rack</h3>
+                    <p>A heavy-duty, double-rail garment rack. It provides extra hanging space for clothes and features a bottom shelf for shoes or storage boxes..</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 7 (Decoration) -->
+                <div class="product-card" data-category="decoration">
+                    <div class="product-img-container"><img src="Imgens/Products/Decoration/Dish drainer.webp" alt="Deco"></div>
+                    <h3>Dish Drainer</h3>
+                    <p>A two-tier kitchen drying rack with a modern black finish. It includes specialized compartments for plates, bowls, cutlery, and even a side holder for a cutting board.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 8 (Decoration) -->
+                <div class="product-card" data-category="decoration">
+                    <div class="product-img-container"><img src="Imgens/Products/Decoration/Expandable Rack.webp" alt="Deco"></div>
+                    <h3>Expandable Rack</h3>
+                    <p>A versatile black metal shelf designed to fit over appliances or inside cabinets. Its width can be adjusted to maximize vertical storage space.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 9 (Decoration) -->
+                <div class="product-card" data-category="decoration">
+                    <div class="product-img-container"><img src="Imgens/Products/Decoration/GLASS POTS KIT.webp" alt="Deco"></div>
+                    <h3>Glas Pots Kit</h3>
+                    <p>A set of airtight glass jars in various heights, featuring eco-friendly wooden lids. They are perfect for storing dry goods like pasta, grains, and spices while keeping them visible and fresh.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 10 (Decoration) -->
+                <div class="product-card" data-category="decoration">
+                    <div class="product-img-container"><img src="Imgens/Products/Decoration/MODERN INDUSTRIAL TABLE.webp" alt="Deco"></div>
+                    <h3>Modern Industrial Table</h3>
+                    <p>A stylish desk or dining table featuring a rustic wood-finish top and geometric black metal legs. Its minimalist design fits perfectly in modern home offices or dining areas.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 11 (Decoration) -->
+                <div class="product-card" data-category="decoration">
+                    <div class="product-img-container"><img src="Imgens/Products/Decoration/Organizer Cart_2.webp" alt="Deco"></div>
+                    <h3>Organizer Cart</h3>
+                    <p>A tall, slender four-tier rolling cart made of wire mesh. Its narrow design is ideal for squeezing into tight spaces in the laundry room, pantry, or bathroom.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 12 (Decoration) -->
+                <div class="product-card" data-category="decoration">
+                    <div class="product-img-container"><img src="Imgens/Products/Decoration/Retractable wall-mounted clothesline.webp" alt="Deco"></div>
+                    <h3>Retractable wall-mounted clothesline</h3>
+                    <p>A space-saving laundry solution that mounts to the wall. It features several parallel lines that can be pulled out for air-drying clothes and retracted when not in use.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 13 (Decoration) -->
+                <div class="product-card" data-category="decoration">
+                    <div class="product-img-container"><img src="Imgens/Products/Decoration/SHELF WITH METAL FRAME.webp" alt="Deco"></div>
+                    <h3>Shelf With Metal Frame</h3>
+                    <p>A two-tier black metal shelving unit designed to provide extra storage on countertops or desks. Its open frame allows for easy access to frequently used items.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 14 (Decoration) -->
+                <div class="product-card" data-category="decoration">
+                    <div class="product-img-container"><img src="Imgens/Products/Decoration/SINK ORGANIZER.webp" alt="Deco"></div>
+                    <h3>Sink Organizer</h3>
+                    <p>A large, over-the-sink storage rack that maximizes vertical space. It features multiple compartments for drying dishes, storing utensils, and hanging kitchen tools, all while keeping the countertop clear..</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 15 (Decoration) -->
+                <div class="product-card" data-category="decoration">
+                    <div class="product-img-container"><img src="Imgens/Products/Decoration/STORAGE CART.webp" alt="Deco"></div>
+                    <h3>Storage Cart</h3>
+                    <p>A two-tier white utility cart with a flat wooden top. This versatile piece can serve as a mobile coffee station, a kitchen prep cart, or a side table.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 1 (Electronics) -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-img-container"><img src="Imgens/Products/electronics/BARCODE READER.webp" alt="Electronics"></div>
+                    <h3>Barcode Reader</h3>
+                    <p>Desktop fixed barcode reader, ideal for speeding up checkout and point-of-sale service.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 2 (Electronics) -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-img-container"><img src="Imgens/Products/electronics/KETTLE.webp" alt="Electronics"></div>
+                    <h3>Electric Kettle</h3>
+                    <p>Classic design stainless steel electric kettle, durable and practical for everyday use.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 3 (Electronics) -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-img-container"><img src="Imgens/Products/electronics/KETTLE_2.webp" alt="Electronics"></div>
+                    <h3>Electric Kettle</h3>
+                    <p>Classic design stainless steel electric kettle, durable and practical for everyday use.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 4 (Electronics) -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-img-container"><img src="Imgens/Products/electronics/KETTLE_3.webp" alt="Electronics"></div>
+                    <h3>Electric Kettle</h3>
+                    <p>Classic design stainless steel electric kettle, durable and practical for everyday use.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 5 (Electronics) -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-img-container"><img src="Imgens/Products/electronics/KETTLE_4.webp" alt="Electronics"></div>
+                    <h3>Electric Kettle</h3>
+                    <p>Classic design stainless steel electric kettle, durable and practical for everyday use.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 6 (Electronics) -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-img-container"><img src="Imgens/Products/electronics/KETTLE_5.webp" alt="Electronics"></div>
+                    <h3>Electric Kettle</h3>
+                    <p>Classic design stainless steel electric kettle, durable and practical for everyday use.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 7 (Electronics) -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-img-container"><img src="Imgens/Products/electronics/KETTLE_6.webp" alt="Electronics"></div>
+                    <h3>Electric Kettle</h3>
+                    <p>Classic design stainless steel electric kettle, durable and practical for everyday use.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 8 (Electronics) -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-img-container"><img src="Imgens/Products/electronics/Bluetooth Headphones J80.webp" alt="Electronics"></div>
+                    <h3>Packaging Bluetooth Headphones J80</h3>
+                    <p>A retail box for the J80 wireless ear-clip headphones.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 9 (Electronics) -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-img-container"><img src="Imgens/Products/electronics/Bluetooth Headphones J90.webp" alt="Electronics"></div>
+                    <h3>Packaging Bluetooth Headphones J90</h3>
+                    <p>A retail box for the J90 wireless ear-clip headphones.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 10 (Electronics) -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-img-container"><img src="Imgens/Products/electronics/Colorful Box for Bluetooth Headphones G126.webp" alt="Electronics"></div>
+                    <h3>Colorful Box for Bluetooth Headphones G126</h3>
+                    <p>Packaging Bluetooth Headphones G126</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 11 (Electronics) -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-img-container"><img src="Imgens/Products/electronics/Colorful Box for Bluetooth Headphones S62.webp" alt="Electronics"></div>
+                    <h3>Colorful Box for Bluetooth Headphones S62</h3>
+                    <p>Packaging Bluetooth Headphones S62</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+                <!-- PRODUCTO 12 (Electronics) -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-img-container"><img src="Imgens/Products/electronics/PLASTIC PHONE BASE.webp" alt="Electronics"></div>
+                    <h3>Plastic Phone Base</h3>
+                    <p>A simple and lightweight desk stand made of durable plastic.</p>
+                    <a href="#contact" class="btn-card">SPEAK WITH A SPECIALIST &rarr;</a>
+                </div>
+
+
+            </div>
+
+            <!-- PAGINACIÓN -->
+            <div class="pagination-container">
+                <button class="page-arrow" id="prev-page">&lsaquo;</button>
+                <div id="page-numbers" class="page-numbers">
+                    <!-- Los números se generan con JS -->
+                </div>
+                <button class="page-arrow" id="next-page">&rsaquo;</button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- =========================================
+         SECCIÓN CTA (CALL TO ACTION)
+         ========================================= -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-text">
+                <h2>Your connection to the world’s most<br>promising markets starts here.</h2>
+                <p>Our global experts are ready to design the ideal import or export<br>solution for your company.</p>
+            </div>
+            <div class="cta-button-container">
+                <!-- Enviamos el CTA directo al formulario de contacto -->
+                <a href="#contact" class="btn-white">SPEAK WITH A SPECIALIST</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         SECCIÓN DE CONTACTO
+         ========================================= -->
+     <section class="contact-section" id="contact">
+        <div class="contact-container">
+            
+            <!-- Tarjeta de Información (Izquierda) -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Say something to start a live chat!</p>
+            </div>
+
+            <!-- Formulario (Derecha) -->
+            <div class="contact-form-container">
+                
+                <!-- Mensaje de éxito (Oculto inicialmente) -->
+                <div id="success-message" class="success-message" style="display: none;">
+                    <h3>Thank you for your interest in doing business with us, we will contact you as soon as possible.</h3>
+                </div>
+
+                <!-- Formulario -->
+                <form action="https://formsubmit.co/sowaagencia@gmail.com" method="POST" class="contact-form" id="contact-form">
+                    <input type="hidden" name="_cc" value="av09marketing@gmail.com">
+                    
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <!-- ==============================================
+                         CONFIGURACIÓN PARA IDENTIFICAR EL LEAD 
+                         ============================================== -->
+                    
+                    <input type="hidden" name="_subject" value="🔔 New Lead from ATG Website!">
+                    <input type="hidden" name="Internal Note" value="This is a new interested lead from the ATG website. Please reply as soon as possible.">
+                    
+                    <!-- ============================================== -->
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="First Name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="business">Business</label>
+                            <input type="text" id="business" name="Business" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="Email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">Phone Number (with country code)</label>
+                            <input type="tel" id="phone" name="Phone Number" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-submit" id="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =========================================
+         FOOTER
+         ========================================= -->
+    <footer class="footer">
+        <p> Address: Unit 1411, 14/Floor, Cosco Tower, 183 Queen's Road Central, Sheung Wan, Hong Kong.</p>
+        <p>&copy; 2026 ATLANTIC TRADING GROUP. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        // 1. FUNCIONALIDAD DEL MENÚ HAMBURGUESA
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+
+        // Cerrar el menú al hacer clic en un enlace
+        document.querySelectorAll(".nav-links a").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }));
+
+       // ==========================================
+        // LÓGICA DE FILTROS Y PAGINACIÓN
+        // ==========================================
+        const products = Array.from(document.querySelectorAll('.marketplace-grid .product-card'));
+        const filterBtns = document.querySelectorAll('.filter-pill');
+        const pageNumbersContainer = document.getElementById('page-numbers');
+        const btnPrev = document.getElementById('prev-page');
+        const btnNext = document.getElementById('next-page');
+
+        const itemsPerPage = 8; // Mostrar 8 productos por página (4 columnas x 2 filas)
+        let currentPage = 1;
+        let currentFilter = 'all';
+
+        function updateView() {
+            // 1. Filtrar productos
+            const filteredProducts = products.filter(product => {
+                return currentFilter === 'all' || product.getAttribute('data-category') === currentFilter;
+            });
+
+            // 2. Calcular paginación
+            const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
+            
+            // Asegurar que la página actual sea válida
+            if(currentPage < 1) currentPage = 1;
+            if(currentPage > totalPages) currentPage = totalPages === 0 ? 1 : totalPages;
+
+            // 3. Ocultar todos los productos
+            products.forEach(p => p.style.display = 'none');
+
+            // 4. Mostrar solo los de la página actual
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            
+            filteredProducts.slice(startIndex, endIndex).forEach(p => {
+                p.style.display = 'flex'; // Usamos flex porque la card tiene display: flex en CSS
+            });
+
+            // 5. Actualizar botones de paginación
+            renderPagination(totalPages);
+        }
+
+        function renderPagination(totalPages) {
+            pageNumbersContainer.innerHTML = '';
+            
+            for (let i = 1; i <= totalPages; i++) {
+                const btn = document.createElement('button');
+                btn.classList.add('page-num');
+                if (i === currentPage) btn.classList.add('active');
+                btn.innerText = i;
+                btn.addEventListener('click', () => {
+                    currentPage = i;
+                    updateView();
+                    window.scrollTo({ top: document.querySelector('.marketplace-section').offsetTop - 50, behavior: 'smooth' });
+                });
+                pageNumbersContainer.appendChild(btn);
+            }
+
+            // Habilitar/deshabilitar flechas
+            btnPrev.disabled = currentPage === 1;
+            btnNext.disabled = currentPage === totalPages || totalPages === 0;
+        }
+
+        // Eventos para los filtros
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.getAttribute('data-filter');
+                currentPage = 1; // Volver a la página 1 al filtrar
+                updateView();
+            });
+        });
+
+        // Eventos flechas prev/next
+        btnPrev.addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                updateView();
+            }
+        });
+
+        btnNext.addEventListener('click', () => {
+            const filteredProducts = products.filter(product => currentFilter === 'all' || product.getAttribute('data-category') === currentFilter);
+            const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
+            if (currentPage < totalPages) {
+                currentPage++;
+                updateView();
+            }
+        });
+
+        // Iniciar vista
+        updateView();
+    </script>
+</body>
+</html>
